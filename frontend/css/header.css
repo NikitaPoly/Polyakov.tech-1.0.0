@@ -1,0 +1,19 @@
+header{/*this is the banner under the nav. should only hold titles of what is on the page should be the h1/h2 here only*/
+    background-color: var(--mainBlue--);
+    max-height: 15vw;
+    min-height: 15vw;
+    color:white;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+    header h1, header h2{/*set the font to not be as bold as rest of the page*/
+        font-weight: 400;
+    }
+        header h1{
+         font-size: 4vw;   
+        }
+        header h2{
+            font-size: 3.5vw;
+        }

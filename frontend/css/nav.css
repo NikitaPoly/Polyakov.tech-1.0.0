@@ -1,0 +1,31 @@
+nav{/*default nav propeerties.*/
+    background-color:var(--mainRed--);
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    height:10vh;
+
+}
+    nav a{/*styles each link inside the nav to be white and have a width*/
+        color:white;
+        font-size: 3vw;
+        font-weight: lighter;
+        max-width: 10vw;
+        min-width: 10vw;
+        text-align: center;
+    }
+        nav a#active{/*for the nav option that the user is currently looking at*/
+            background-color: var(--mainBlue--);
+            height:100%;
+            padding:1rem;
+        }
+            nav a#active:hover{
+                cursor: default;
+            }
+        nav a:hover{/*to show that this link can be selected*/
+            background-color: var(--mainBlue--);
+            cursor: pointer;
+        }
+    nav img{/*limit the size of the logo*/
+        max-height: 5rem;
+    }
