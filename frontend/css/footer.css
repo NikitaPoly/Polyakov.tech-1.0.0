@@ -1,0 +1,12 @@
+footer{/*default footer prroperties*/
+    background-color: var(--mainBlue--);
+    color: var(--mainRed--);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 10vh;
+    min-height: 10vh;
+}
+    footer img{/*make the images not over sized*/
+        width:4vw;
+    }
