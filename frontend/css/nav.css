@@ -13,11 +13,12 @@ nav{/*default nav propeerties.*/
         max-width: 10vw;
         min-width: 10vw;
         text-align: center;
+        text-decoration: none;
     }
         nav a#active{/*for the nav option that the user is currently looking at*/
             background-color: var(--mainBlue--);
             height:100%;
-            padding:1rem;
+            padding:1rem 0;
         }
             nav a#active:hover{
                 cursor: default;

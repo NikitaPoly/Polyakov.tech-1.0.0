@@ -1,0 +1,55 @@
+main section ul, main article p{/**/
+    background-color: white;
+}
+    main section ul{
+        list-style: none;
+    }
+    main section ol{
+        margin-top: 1rem;
+    }
+        main section ol li{
+            text-align: center;
+            font-size: 3.1vw;
+        }
+    main section ul li{
+        border-top:.5rem solid var(--mainLightBlue--);
+        border-radius: .3rem;
+        padding: 1rem;
+    }
+        main section li p{
+            padding-top:1rem;
+        }
+main button#gameButton{
+    background-color: var(--mainRed--);
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 2.3rem;
+    border-radius: 1rem;
+}
+main button#sendScoreButton{
+    background-color: var(--mainBlue--);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+div#flexDiv{/*div that will hold the news and buton game/ leader board*/
+    display: flex;
+    justify-content: space-around;
+}
+    div#flexDiv section{
+        max-width:50vw;
+        padding-top: 2rem;
+    }
+article{/*this is the about me */
+    padding: 3rem;
+    max-width: 50rem;
+    margin: auto;
+}
+    article h1{
+        color: var(--mainRed--);
+        text-align: center;
+        font-size: 10vw;
+        margin: 2rem;
+    }
+    article p{
+        padding: 2rem;
+    }

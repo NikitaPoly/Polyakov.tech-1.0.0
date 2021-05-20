@@ -2,6 +2,7 @@
     --mainRed--:#E63946;
     --mainBlue--:#1D3557;
     --mainLight--:#F1FAEE;
+    --mainLightBlue--:#A8DADC;
 }
 *{
     margin:0;
@@ -14,3 +15,7 @@ body{/*sets color of background and default font*/
 main{/*make the main content box take up[ the rest of the space so that the footer can not be seen*/
     min-height: 70vh;
 }
+    main button{/*making all buttons my style*/
+        border: none;
+        color: white;
+    }
