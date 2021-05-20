@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    flex-flow: column;
+}
+    header h2{
+        max-height: 10vh;
+        font-size: 5vh;
+    }
+    header a{
+        background-color: red;
+        padding: .5rem;
+        border-radius: .75rem;
+        min-width: 7rem;
+        list-style: none;
+    }
+    header div#linksInHeaderDiv{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+        header div#linksInHeaderDiv a#linkedinLink{
+            background-color: #0072B1;
+        }
+        header div#linksInHeaderDiv a#pdfResume{
+            background-color: #F40F02;
+        }
+        header div#linksInHeaderDiv a#gitHubLink{
+            background-color: #333333;
+        }
+main{
+    display: flex;
+    justify-content: space-around;
+}
+    main h1, main h2, main h3{
+        color:var(--mainRed--);
+        text-align: center;
+        font-size: 2.3vw;
+        margin-top: 2rem;
+    }
+    main article p{/*this is the text of goals and skills*/
+        background-color: white;
+        max-width: 25vw;
+        margin-top: 1.5rem;
+        padding: 1rem 1.5rem;
+        text-indent: 1rem;
+    }
+        main article p em{/*to hilight the tech i know*/
+            color:var(--mainRed--);
+            font-weight: 700;
+        }
+    main section ul{/*this is the list of univercity courses */
+        list-style: none;
+        text-align: center;
+    }
+        main section ul li{
+            margin: 1rem;
+            font-weight: bold;
+        }
