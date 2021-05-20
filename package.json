@@ -1,0 +1,19 @@
+{
+  "name": "polyakov.tech",
+  "version": "1.0.0",
+  "description": "my profile website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikitaPoly/Polyakov.tech-1.0.0.git"
+  },
+  "author": "Nikita Polyakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikitaPoly/Polyakov.tech-1.0.0/issues"
+  },
+  "homepage": "https://github.com/NikitaPoly/Polyakov.tech-1.0.0#readme"
+}
