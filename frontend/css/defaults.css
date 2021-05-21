@@ -18,4 +18,9 @@ main{/*make the main content box take up[ the rest of the space so that the foot
 button{/*making all buttons my style*/
     border: none;
     color: white;
+    border: 3px solid var(--mainLight--);
+}
+button:active{
+    border: 3px solid var(--mainLightBlue--);
+    box-sizing: border-box;
 }

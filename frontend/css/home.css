@@ -26,11 +26,17 @@ main button#gameButton{
     margin-bottom: 2.3rem;
     border-radius: 1rem;
 }
+    main button#gameButton:hover{
+        cursor: pointer;
+    }
 main button#sendScoreButton{
     background-color: var(--mainBlue--);
     padding: 1rem;
     border-radius: .5rem;
 }
+    main button#sendScoreButton{
+        cursor: pointer;
+    }
 div#flexDiv{/*div that will hold the news and buton game/ leader board*/
     display: flex;
     justify-content: space-around;
