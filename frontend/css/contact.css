@@ -6,3 +6,11 @@ header{
         margin: 0 .5rem;
         margin-left: 0;
     }
+main{
+    text-align: center;
+}
+    main span{
+        color:var(--mainRed--);
+        font-size: 4vw;
+        font-weight:bold;
+    }
