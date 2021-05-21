@@ -1,0 +1,8 @@
+header{
+    display: flex;
+    flex-flow: column;
+}
+    header div#typeOfContactDiv label{
+        margin: 0 .5rem;
+        margin-left: 0;
+    }

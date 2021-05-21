@@ -1,0 +1,44 @@
+header{/*no text in header so i have to hide the selexcted page blue hangouver*/
+    max-height: 2vh;
+    min-height: 2vh;
+}
+main{/*change the main section height because the headr size is different*/
+    height: 79vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+    main article{
+        background-color: white;
+        max-width: 25vw;
+        min-width: 25vw;
+        margin: 3rem 0;
+        padding: 1.3rem;
+        overflow-y: scroll;
+        text-indent: 1rem;
+        text-align: center;
+        transition: box-shadow 250ms;
+    }
+        main article img{
+            height: 5vw;
+            margin: .3rem 0;
+            transition: transform 250ms;
+        }
+            main article img:hover{
+                transform: translateY(-10px);
+            }
+        main article:hover{/* makes the project look 3d when hovered*/
+        box-shadow: 1rem 1rem 1rem var(--mainLightBlue--);
+        }
+        main article h1, main article h2{
+            text-align: center;
+        }
+            main article h1{
+                font-size: 3vw;
+                margin-bottom: 1rem;
+            }
+            main article h2{
+                font-size: 2vw;
+            }
+            main article p{
+                text-align: start;
+            }

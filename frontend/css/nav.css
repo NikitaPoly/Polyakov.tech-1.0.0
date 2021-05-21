@@ -14,6 +14,7 @@ nav{/*default nav propeerties.*/
         min-width: 10vw;
         text-align: center;
         text-decoration: none;
+        transition: background-color 550ms;
     }
         nav a#active{/*for the nav option that the user is currently looking at*/
             background-color: var(--mainBlue--);

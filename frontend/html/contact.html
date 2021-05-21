@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/nav.css"> 
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
     <nav>
@@ -19,8 +20,26 @@
         <a id="active">Contact</a>
     </nav>
     <header>
-        <h2>Website News</h2>
-        <h2>Button Click<br>Leader Board</h2>
+        <h1>What is your message about?</h1>
+        <div id="typeOfContactDiv">
+            <input type="radio" id="question" name="contactType" value="question">
+            <label for="question">Question</label>
+
+            <input type="radio" id="learncode" name="contactType" value="learncode">
+            <label for="learncode">Learn Code</label>
+
+            <input type="radio" id="websiterequest" name="contactType" value="websiterequest">
+            <label for="websiterequest">Website Request</label>
+
+            <input type="radio" id="collaboration" name="contactType" value="collaboration">
+            <label for="collaboration">Collaboration</label>
+
+            <input type="radio" id="bugreport" name="contactType" value="bugreport">
+            <label for="bugreport">Bug Report</label>
+
+            <input type="radio" id="othere" name="contactType" value="othere">
+            <label for="othere">Othere</label>
+        </div>
     </header>
     <main></main>
     <footer>
