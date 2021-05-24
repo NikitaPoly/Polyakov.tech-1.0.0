@@ -10,3 +10,12 @@ footer{/*default footer prroperties*/
     footer img{/*make the images not over sized*/
         width:4vw;
     }
+@media only screen and (max-width:420px) and (hover:none){/*media query for portirate phone*/
+    footer a:nth-child(n+4){
+        display: none;
+    }
+    footer img{
+        width: 10vw;
+        max-width: 10vh;
+    }
+}

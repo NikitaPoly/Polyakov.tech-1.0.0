@@ -1,0 +1,25 @@
+div#MobileNavDiv{/*mobile nad created my the js*/
+    position:fixed;
+    top:10vh;
+    background-color: var(--mainRed--);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color:white;
+    font-size:20vw;
+    visibility: hidden;
+}
+    div#MobileNavDiv a{
+        text-decoration: none;
+        color: white;
+        font-weight: 300;
+        margin: 1rem 0;
+    }
+        div#MobileNavDiv a#active{
+            background-color: var(--mainBlue--);
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+        }
