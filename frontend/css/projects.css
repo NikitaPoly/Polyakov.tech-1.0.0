@@ -42,3 +42,25 @@ main{/*change the main section height because the headr size is different*/
             main article p{
                 text-align: start;
             }
+@media only screen and (max-width:420px) and (hover:none){/*media query for portirate phone*/
+    main{
+        flex-flow: column;
+        align-items: center;
+        min-height: 79vh;
+        height: auto;
+    }
+    main article:nth-child(1){
+        min-width: 50vw;
+        max-width: 50vw;
+        min-height: 60vh;
+    }
+        main article h1{
+            font-size: 6vw;
+        }
+        main article h2{
+            font-size: 4vw;
+        }
+        main article img{
+            height: 9vw;
+        }
+}
