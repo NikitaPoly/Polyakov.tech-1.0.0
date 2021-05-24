@@ -14,3 +14,8 @@ main{
         font-size: 4vw;
         font-weight:bold;
     }
+@media only screen and (max-width:420px) and (hover:none){
+    main span{
+        font-size:13vw;
+    }
+}
