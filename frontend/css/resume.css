@@ -11,7 +11,8 @@ header {
         padding: .5rem;
         border-radius: .75rem;
         min-width: 7rem;
-        list-style: none;
+        text-decoration: none;
+        color:white
     }
     header div#linksInHeaderDiv{
         display: flex;
