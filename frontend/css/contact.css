@@ -14,6 +14,34 @@ main{
         font-size: 4vw;
         font-weight:bold;
     }
+    main form{
+        color:var(--mainRed--);
+        display: flex;
+        flex-flow: column;
+        font-weight: bold;
+        padding: 5rem;
+    }
+        main form button{
+            background-color: var(--mainBlue--);
+            color:var(--mainRed--);
+            width:10rem;
+            height: 4rem;
+            margin: 3rem;
+            align-self:center ;
+        }
+        main form label{
+            align-self: flex-start ;
+            margin-top:2rem
+        }
+        main form input{
+            width:15rem;
+        }
+        main form textarea{
+            width: 60vw;
+            height: 5rem;
+            resize: none;       
+            align-self: baseline;
+        }
 @media only screen and (max-width:420px) and (hover:none){
     main span{
         font-size:13vw;
