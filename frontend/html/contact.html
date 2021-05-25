@@ -12,6 +12,62 @@
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/mobileNav.css">
     <link rel="stylesheet" href="../css/ecard.css">
+    <template>
+        <form id="questionForm">
+            <label for="userEmail">Email</label>
+            <input type="text" id="userEmail" name="userMessage" required>
+            <button>Send</button>
+            <p id="errorMessage"></p>
+            <label for="questionTopic">Question Topic</label>
+            <input type="text" id="questionTopic" name="userMessage" required>
+            <label for="body">Body</label>
+            <textarea name="userMessage" id="body" required></textarea>
+        </form>
+        <form id="learncodeForm">
+            <label for="userEmail">Email</label>
+            <input type="text" id="userEmail" name="userMessage" required>
+            <button>Send</button>
+            <p id="errorMessage"></p>
+            <label for="learnTopic">Topic you want to learn</label>
+            <input type="text" id="learnTopic" name="userMessage" required>
+            <label>Age</label>
+            <input type="number" min="10" max="100" id="age" name="userMessage" required>
+            <label for="body">Why would you like to learn this?</label>
+            <textarea name="userMessage" id="body" required></textarea>
+        </form>
+        <form id="websiterequestForm">
+            <label for="userEmail">Email</label>
+            <input type="text" id="userEmail" name="userMessage" required>
+            <button>Send</button>
+            <p id="errorMessage"></p>
+            <label for="body">A little background about your website</label>
+            <textarea name="userMessage" id="body" required></textarea>
+        </form>
+        <form id="collaborationForm">
+            <label for="userEmail">Email</label>
+            <input type="text" id="userEmail" name="userMessage" required>
+            <button>Send</button>
+            <p id="errorMessage"></p>
+            <label for="body">What kind of Collaboration</label>
+            <textarea name="userMessage" id="body" required></textarea>
+        </form>
+        <form id="bugreportForm">
+            <button>Send</button>
+            <p id="errorMessage"></p>
+            <label for="body">What, where and when did the bug happen?</label>
+            <textarea name="userMessage" id="body" required></textarea>
+        </form>
+        <form id="othereForm">
+            <label for="userEmail">Email</label>
+            <input type="text" id="userEmail" name="userMessage" required>
+            <button>Send</button>
+            <p id="errorMessage"></p>
+            <label for="questionTopic">Topic</label>
+            <input type="text" id="Topic" name="userMessage" required>
+            <label for="body">Body</label>
+            <textarea name="userMessage" id="body" required></textarea>
+        </form>
+    </template>
 </head>
 <body>
     <nav>
@@ -62,5 +118,6 @@
         <h6>Nikitapolytech@gmail.com</h6>
     </ecard>
     <script src="../js/mobileMenuSlide.js"></script>
+    <script src="../js/contact.js"></script>
 </body>
 </html>

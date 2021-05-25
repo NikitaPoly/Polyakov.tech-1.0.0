@@ -9,7 +9,7 @@ for(let i = 0; i < 4; i++){//only append the links in the nav
 }
 document.getElementsByTagName("body")[0].appendChild(mobileMenu);//put the mobile nav on the page
 mobileMenu.id = "MobileNavDiv";//give the mobile nav an id so that we can work with it
-console.log(mobileMenu);//debug
+
 
 const toggleMobileMenu = ()=>{//function for togeling the mobile nav
    if(mobileMenu.style.visibility == "hidden"){//if the mobile nav is not visible
