@@ -1,0 +1,30 @@
+ecard{
+    visibility: hidden;
+    position: fixed;
+    top:0;
+    background-color: var(--mainLight--);
+    width:90vw;
+    height: 90vh;
+    border-top:5vh solid var(--mainBlue--);
+    border-bottom:5vh solid var(--mainBlue--);
+    border-left:5vw solid var(--mainBlue--);
+    border-right:5vw solid var(--mainBlue--);
+}
+    ecard h6{
+        margin: 1rem;
+        color:var(--mainRed--)
+    }
+        ecard h6:nth-child(1){
+            font-size: 10vw;
+        }
+        ecard h6:nth-child(2){
+            font-size: 5vw;
+        }
+        ecard h6:nth-child(3){
+            font-size: 4vw;
+        }
+@media only screen and (min-width:421px) and (hover:none) and (orientation:landscape){
+    ecard{
+        visibility: visible;
+    }
+}
