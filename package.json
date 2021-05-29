@@ -1,8 +1,8 @@
 {
-  "name": "polyakov.tech",
+  "name": "current",
   "version": "1.0.0",
-  "description": "my profile website",
-  "main": "index.js",
+  "description": "Created Repo",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/NikitaPoly/Polyakov.tech-1.0.0.git"
   },
-  "author": "Nikita Polyakov",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NikitaPoly/Polyakov.tech-1.0.0/issues"
   },
-  "homepage": "https://github.com/NikitaPoly/Polyakov.tech-1.0.0#readme"
+  "homepage": "https://github.com/NikitaPoly/Polyakov.tech-1.0.0#readme",
+  "devDependencies": {
+    "@types/node": "^15.6.1",
+    "typescript": "^4.3.2"
+  }
 }
