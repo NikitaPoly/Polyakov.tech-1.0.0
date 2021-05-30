@@ -66,7 +66,6 @@ const POSTRequestHanlder = (wherePostCameFrom, req, res) => {
 };
 const sendErrorPage = (res) => {
     GETRequestHandler("/error", res);
-    res.end();
 };
 const GETRequestHandler = (requestUrl, res) => {
     if (!requestUrl.includes(".")) { //if this is a base url like /home or / contact
