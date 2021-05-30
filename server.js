@@ -102,6 +102,8 @@ const startRoutingRequest = (req, res) => {
             //@ts-ignore: noImplicitAny
             POSTRequestHanlder(req.url, req, res);
             break;
+        case "PATCH":
+            console.log("someone wants to patch");
         default: //if method is not supported
             sendErrorPage(res);
     }
