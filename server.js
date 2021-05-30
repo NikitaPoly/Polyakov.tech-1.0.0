@@ -65,8 +65,7 @@ const POSTRequestHanlder = (wherePostCameFrom, req, res) => {
     });
 };
 const sendErrorPage = (res) => {
-    console.log("page error");
-    res.write("ErrorPage");
+    GETRequestHandler("/error", res);
     res.end();
 };
 const GETRequestHandler = (requestUrl, res) => {

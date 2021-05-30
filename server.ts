@@ -24,7 +24,7 @@ const MIMETYPES:mimesList = {//actula mime types list: contains all aprooved mim
 
 const PolyakoDOTtech:http.Server = http.createServer();
 
-const saveToDB = (collectionName:string,dataTosave:string)=>{
+const saveToDB = (collectionName:string,dataTosave:string)=>{//send the data to collection
     const uri = "mongodb+srv://PolyakovDOTTech:123abc@polyakovtechdb.n6fvv.mongodb.net/PolyakovTechDB?retryWrites=true&w=majority";
     MongoClient.connect(uri,(err,db)=>{//bunch of mongo code to connect to db and send the data
         if(err){
@@ -73,8 +73,7 @@ const POSTRequestHanlder = (wherePostCameFrom:string,req:http.IncomingMessage ,r
 }
 
 const sendErrorPage= (res:http.ServerResponse)=>{//this is responsible for sending the 404 page not found// maybe change to change page based on type of err like 404 or 301
-    console.log("page error")
-    res.write("ErrorPage");
+    GETRequestHandler("/error",res)
     res.end();
 }
 
