@@ -1,3 +1,6 @@
+main section{
+    min-width: 40vw;
+}
 main section ul, main article p{/**/
     background-color: white;
 }

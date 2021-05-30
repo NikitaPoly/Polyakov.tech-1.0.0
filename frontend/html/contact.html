@@ -13,59 +13,65 @@
     <link rel="stylesheet" href="../css/mobileNav.css">
     <link rel="stylesheet" href="../css/ecard.css">
     <template>
-        <form id="questionForm">
+        <form method="POST" id="questionForm">
+            <input hidden value="Question" name="typeOfContact">
             <label for="userEmail">Email</label>
-            <input type="email" id="userEmail" name="userMessage" required>
-            <button>Send</button>
+            <input type="email" id="userEmail" name="UserEmail" required>
+            <input type="submit" value="Send Messgae">
             <p id="errorMessage"></p>
             <label for="questionTopic">Question Topic</label>
-            <input type="text" id="questionTopic" name="userMessage" required>
+            <input type="text" id="questionTopic" name="QuestionTopic" required>
             <label for="body">Body</label>
-            <textarea name="userMessage" id="body" required></textarea>
+            <textarea name="BodyOfMessage" id="body" required></textarea>
         </form>
-        <form id="learncodeForm">
+        <form method="POST" id="learncodeForm">
+            <input hidden value="LearnCode" name="typeOfContact">
             <label for="userEmail">Email</label>
-            <input type="email" id="userEmail" name="userMessage" required>
-            <button>Send</button>
+            <input type="email" id="userEmail" name="UserEmail" required>
+            <input type="submit" value="Send Messgae">
             <p id="errorMessage"></p>
             <label for="learnTopic">Topic you want to learn</label>
-            <input type="text" id="learnTopic" name="userMessage" required>
+            <input type="text" id="learnTopic" name="TopicToLearn" required>
             <label>Age</label>
-            <input type="number" min="10" max="100" id="age" name="userMessage" required>
+            <input type="number" min="10" max="100" id="age" name="UserAge" required>
             <label for="body">Why would you like to learn this?</label>
-            <textarea name="userMessage" id="body" required></textarea>
+            <textarea name="BodyOfMessage" id="body" required></textarea>
         </form>
-        <form id="websiterequestForm">
+        <form method="POST" id="websiterequestForm">
+            <input hidden value="WebstieRequest" name="typeOfContact">
             <label for="userEmail">Email</label>
-            <input type="email" id="userEmail" name="userMessage" required>
-            <button>Send</button>
+            <input type="email" id="userEmail" name="UserEmail" required>
+            <input type="submit" value="Send Messgae">
             <p id="errorMessage"></p>
             <label for="body">A little background about your website</label>
-            <textarea name="userMessage" id="body" required></textarea>
+            <textarea name="BodyOfMessage" id="body" required></textarea>
         </form>
-        <form id="collaborationForm">
+        <form method="POST" id="collaborationForm">
+            <input hidden value="CollabRequest" name="typeOfContact">
             <label for="userEmail">Email</label>
-            <input type="email" id="userEmail" name="userMessage" required>
-            <button>Send</button>
+            <input type="email" id="userEmail" name="UserEmail" required>
+            <input type="submit" value="Send Messgae">
             <p id="errorMessage"></p>
             <label for="body">What kind of Collaboration</label>
-            <textarea name="userMessage" id="body" required></textarea>
+            <textarea name="BodyOfMessage" id="body" required></textarea>
         </form>
-        <form id="bugreportForm">
-            <button>Send</button>
+        <form method="POST" id="bugreportForm">
+            <input hidden value="BugReport" name="typeOfContact">
+            <input type="submit" value="Send Messgae">
             <p id="errorMessage"></p>
             <label for="body">What, where and when did the bug happen?</label>
-            <textarea name="userMessage" id="body" required></textarea>
+            <textarea name="BodyOfMessage" id="body" required></textarea>
         </form>
-        <form id="othereForm">
+        <form method="POST" id="othereForm">
+            <input hidden value="OthereForm" name="typeOfContact">
             <label for="userEmail">Email</label>
-            <input type="email" id="userEmail" name="userMessage" required>
-            <button>Send</button>
+            <input type="email" id="userEmail" name="UserEmail" required>
+            <input type="submit" value="Send Messgae">
             <p id="errorMessage"></p>
             <label for="questionTopic">Topic</label>
-            <input type="text" id="Topic" name="userMessage" required>
+            <input type="text" id="Topic" name="QuestionTopic" required>
             <label for="body">Body</label>
-            <textarea name="userMessage" id="body" required></textarea>
+            <textarea name="BodyOfMessage" id="body" required></textarea>
         </form>
     </template>
 </head>

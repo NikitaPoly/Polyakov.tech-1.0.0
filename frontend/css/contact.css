@@ -36,6 +36,14 @@ main{
         main form input{
             width:15rem;
         }
+            main form input[type=submit]{
+                background-color: var(--mainBlue--);
+                color: var(--mainRed--);
+                margin: 1rem;
+                margin-left: 0;
+                padding: 2rem;
+                font-size: 1.7rem;
+            }
         main form textarea{
             width: 60vw;
             height: 5rem;
