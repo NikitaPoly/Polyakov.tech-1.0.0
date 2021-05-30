@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "pretest": "npx tsc",
-    "test": "node server.js"
+    "test": "node server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

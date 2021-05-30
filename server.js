@@ -3,7 +3,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const http = require("http");
 const fs = require("fs");
 const mongodb_1 = require("mongodb");
-const PORT = 8080;
+let PORT = process.env.PORT;
+if (PORT == null || PORT == "") {
+    PORT = 8080;
+}
 const offensiveNames = [
     "nig", "fag", "fuck", "bitch", "gay"
 ];

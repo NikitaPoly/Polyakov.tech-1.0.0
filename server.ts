@@ -1,7 +1,10 @@
 import http = require("http");
 import fs = require("fs");
 import { MongoClient } from "mongodb";
-const PORT:number = 8080;
+let PORT:any= process.env.PORT;
+if(PORT == null || PORT == ""){
+    PORT = 8080;
+}
 
 const offensiveNames:string[] = [
     "nig","fag","fuck","bitch","gay"
