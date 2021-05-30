@@ -1,9 +1,10 @@
 import http = require("http");
 import fs = require("fs");
+import { MongoClient } from "mongodb";
 const PORT:number = 8080;
 
 const offensiveNames:string[] = [
-    "nig","fag","fuck","bitch"
+    "nig","fag","fuck","bitch","gay"
 ]
 
 type mimesList = {//type for the mim type list
@@ -20,6 +21,27 @@ const MIMETYPES:mimesList = {//actula mime types list: contains all aprooved mim
 
 const PolyakoDOTtech:http.Server = http.createServer();
 
+const saveToDB = (collectionName:string,dataTosave:string)=>{
+    const uri = "mongodb+srv://PolyakovDOTTech:123abc@polyakovtechdb.n6fvv.mongodb.net/PolyakovTechDB?retryWrites=true&w=majority";
+    MongoClient.connect(uri,(err,db)=>{//bunch of mongo code to connect to db and send the data
+        if(err){
+            console.log("Error when accesing db : " + err);
+            return;
+        }
+        let dbo = db.db("PolyakovTechDB");
+        dbo.collection(collectionName,(err,result)=>{
+            result.insertOne({Content: dataTosave},(err)=>{
+                if(err){
+                    console.log(err);
+                    return;
+                }
+                console.log("submited to db sucessfully");
+            });
+        })
+    })
+    
+}
+
 const POSTRequestHanlder = (wherePostCameFrom:string,req:http.IncomingMessage ,res:http.ServerResponse)=>{//take the incoming post request nd handler it
     console.log("Post at : " + wherePostCameFrom);
     req.on("data",(data:Buffer)=>{// handle the actual data then send thank you page
@@ -29,7 +51,7 @@ const POSTRequestHanlder = (wherePostCameFrom:string,req:http.IncomingMessage ,r
                 for(let i = 0; i < message.length; i++){// replace all + with a space
                     message[i] = message[i].split("+").join(" ");
                 }
-                console.log(message);//add send to db code here
+                saveToDB("ContactRequest",message.toString());
                 GETRequestHandler("/thankyou",res);
             break;
             case "/home":
@@ -40,6 +62,8 @@ const POSTRequestHanlder = (wherePostCameFrom:string,req:http.IncomingMessage ,r
                         return;
                     }
                     console.log("will save to db")
+                    saveToDB("ButtonGameLeaderBoard",message2.toString());
+                    return;
                 }
         }
     })
@@ -88,6 +112,8 @@ const startRoutingRequest = (req:http.IncomingMessage,res:http.ServerResponse)=>
             //@ts-ignore: noImplicitAny
             POSTRequestHanlder(req.url,req,res);
         break
+        case "PATCH":
+            console.log("someone wants to patch");
         default://if method is not supported
             sendErrorPage(res);
     }
