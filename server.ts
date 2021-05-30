@@ -74,7 +74,6 @@ const POSTRequestHanlder = (wherePostCameFrom:string,req:http.IncomingMessage ,r
 
 const sendErrorPage= (res:http.ServerResponse)=>{//this is responsible for sending the 404 page not found// maybe change to change page based on type of err like 404 or 301
     GETRequestHandler("/error",res)
-    res.end();
 }
 
 const GETRequestHandler = (requestUrl:string,res:http.ServerResponse)=>{//send the get requested apge
