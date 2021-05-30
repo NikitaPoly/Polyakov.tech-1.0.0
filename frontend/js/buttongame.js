@@ -14,6 +14,6 @@ sendButton.addEventListener("click",()=>{
         method: "POST",
         body: JSON.stringify({Score: score, Name: nameOfClicker.value})
     };
-    fetch("http://localhost:8080/home",sendingScoreOptions).then(alert(`Your score has been sent ${nameOfClicker.value}`));
+    fetch("https:/www.polyakov.tech/home",sendingScoreOptions).then(alert(`Your score has been sent ${nameOfClicker.value}`));
 
 })
